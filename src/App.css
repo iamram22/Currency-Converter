@@ -9,25 +9,142 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #218f76;
+  background: url("https://img.freepik.com/free-vector/graph-world-map-stock-market-forex-trading-concept-background_56104-1006.jpg?w=2000&t=st=1722104795~exp=1722105395~hmac=963188e166343094614b9eec2ea2d097527577671e7d683d91ad52129a6bf811")
+    no-repeat fixed center;
 }
 
-/* #root {
-  width: 100%;
-} */
+#root {
+  width: 60%;
+}
 
 .currency-converter {
-  background: #f3b431;
-  /* backdrop-filter: blur(30px); */
+  margin: 0 auto;
   padding: 40px 30px 50px;
-  border-radius: 10px;
-  min-width: 400px;
-  /* border */
-  box-shadow: 0 8px 32px #a3cb37;
+  border-radius: 8px;
+  border: 2px solid pink;
+  max-width: 600px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(118, 0, 104, 0.2);
 }
 
 .currency-converter .converter-title {
   color: #ffffff;
-  font-size: 25px;
-  font-weight: ;
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.currency-converter .converter-form {
+  margin-top: 45px;
+}
+
+.converter-form .form-group {
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+
+.converter-form .form-group .form-label {
+  color: #ffffff;
+  font-weight: 600;
+  display: block;
+  bottom: 9px;
+  font-size: 15px;
+}
+
+.converter-form .form-group .form-input {
+  outline: none;
+  font-size: 20px;
+  padding: 0 5px;
+  color: black;
+  min-height: 40px;
+  border-radius: 5px;
+  border: 2px solid pink;
+  background-color: rgba(255, 244, 224, 0.785);
+}
+
+.converter-form .form-currency-group {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-currency-group .currency-select {
+  display: flex;
+  padding: 0 10px;
+  min-height: 50px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid pink;
+  background-color: rgba(255, 244, 224, 0.1);
+}
+
+.form-currency-group .currency-select img {
+  width: 50px;
+}
+
+.form-currency-group .currency-select .currency-dropdown {
+  outline: none;
+  border: none;
+  background: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0 10px 0 5px;
+}
+
+.form-currency-group .currency-select .currency-dropdown option {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.form-currency-group .swap-icon {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  border: 1px solid pink;
+  background-color: rgba(255, 244, 224, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+.form-currency-group .swap-icon:hover {
+  background: rgba(118, 0, 104, 0.647);
+  border: none;
+  height: 45px;
+  width: 45px;
+}
+
+.converter-form .submit-button {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 450;
+  cursor: pointer;
+  /* background: #ffffff; */
+  border: 2px solid pink;
+  background-color: rgba(255, 244, 224, 0.785);
+  transition: 0.4s ease-in-out;
+}
+
+.converter-form .submit-button:hover {
+  background: rgba(174, 136, 136, 0.296);
+  color: #ffffff;
+}
+
+.converter-form .exchange-rate-result {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 30px;
+  /* background: rgba(255, 244, 224, 0.785); */
+  letter-spacing: 3px;
 }
